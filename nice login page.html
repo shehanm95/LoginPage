@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Roboto:wght@300&family=VT323&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <form action="post">
+            <h2>Login Here</h2>
+            <div class="inputblock"><input class="input" type="text" name="username" id="username"
+                    placeholder="User Name" required>
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="1em"
+                    viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                        d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
+                </svg>
+            </div>
+            <div class="inputblock"><input class="input" type="password" name="Password" id="Password"
+                    placeholder="Password" required>
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="1em"
+                    viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                        d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z" />
+                </svg>
+            </div>
+            <div class="forgot">
+                <a href="#">Forgot Password</a>
+                <div class="keep">
+                    <input type="checkbox" name="keep" id="keep">
+                    <label for="keep"> Keep me Loged in</label>
+                </div>
+
+            </div>
+            <a href="#">
+                <div class="inputblock loginbutton">
+                    <p>Login</p>
+            </a>
+    </div></a>
+    <div class="forgot">
+        <p>If you Don't have an account <a href="#">Register Here.</a></p>
+    </div>
+    </form>
+
+    </div>
+
+
+    <style>
+        :root {
+            --maincolor: rgb(52, 236, 236);
+            --maincolorhover: rgb(94, 254, 254);
+            --icon: rgb(165, 252, 252);
+            --placeholderfont: rgb(167, 255, 255);
+        }
+
+        * {
+            font-family: 'Roboto', sans-serif;
+            color: rgb(170, 236, 240);
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url(https://media.istockphoto.com/id/1333836656/vector/vector-evening-tropical-rainforest-jungle-background-with-jaguar-harpy-eagle-toucan-deer-and.jpg?s=612x612&w=0&k=20&c=X1M6ueYENwfuZrewbEraRmhX0LV4uYT22mgLyplkksY=);
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        ::-webkit-input-placeholder {
+            color: var(--placeholderfont);
+            font-weight: 500
+        }
+
+
+        .icon {
+            height: 15px;
+            fill: var(--icon);
+        }
+
+        form {
+            background: transparent;
+            backdrop-filter: blur(10px);
+            padding: 10px 30px;
+            border: 3px var(--maincolor) solid;
+        }
+
+        h2 {
+            color: var(--maincolor);
+            padding: 7px;
+        }
+
+        .inputblock {
+            height: 30px;
+            border: 2px solid var(--maincolor);
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            padding: 0 10px;
+        }
+
+        .input {
+            width: 90%;
+            background: transparent;
+            border: none;
+
+        }
+
+
+
+        input:focus {
+            border: none;
+            outline: none;
+        }
+
+        .forgot {
+            display: flex;
+            justify-content: space-between;
+            padding: 6px 15px;
+        }
+
+        .forgot a,
+        .forgot p,
+        .forgot label,
+        .forgot input {
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .keep label {
+            padding-left: 4px
+        }
+
+        .keep {
+            align-items: start;
+            display: flex;
+            height: 14px;
+        }
+
+        .loginbutton {
+            background-color: var(--maincolor);
+            border: none
+        }
+
+        .loginbutton:hover {
+            background-color: var(--maincolorhover);
+        }
+
+        .loginbutton p {
+            color: rgb(255, 255, 255);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .forgot a {
+            color: var(--maincolor);
+        }
+    </style>
+</body>
+
+</html>
